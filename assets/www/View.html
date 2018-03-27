@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Sql Example</title>
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+   
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>RentalZ </h1>
+    </div>
+    
+    <input type="button" value="Display Database" onClick="ListDBValues()"> 
+    <input type="button" value="Property Input Page"  onclick="location.href='index.html';" >
+    <br>
+    <span style="font-weight:bold;">Currently stored values:</span>
+    <span id="lbUsers"></span>
+</body>
+</html> 

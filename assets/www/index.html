@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded Sql Example</title>
+    <meta name="viewport" content="width=default-width; user-scalable=no" />
+    <meta http-equiv="Content-type" content="text/html;charset=utf-8">
+
+   
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript">
+        app.initialize();
+    </script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-position="fixed" data-theme="b">
+        <h1>RentalZ </h1>
+    </div>
+    <div class="ui-field-contain">
+    <input id="txPropertyName" type="text" placeholder="Property Name*" required>
+    <input id="txNoBedrooms" type="text" placeholder="Number of Bedrooms*" required>
+    <input id="txDOA" type="date" placeholder="Date of Adding*" required>
+    <input id="txMonthRent" type="text" placeholder="Monthly Rent Price*" required>
+    <input id="txNotes" type="text" placeholder="Additional Notes">
+        <b></b>
+    <input id="txReporterName" type="text" placeholder="Reporter Name*" required>    
+    <input type="button" value="Add record" onClick="AddValueToDB()">
+    <input type="button" value="Refresh" onClick="ListDBValues()"> 
+    <input type="button" value="View"  onclick="location.href='View.html';" >
+    <br>
+    <span style="font-weight:bold;">Currently stored values:</span>
+    <span id="lbUsers"></span>
+</body>
+</html> 
